@@ -4,7 +4,7 @@ const router = require('express').Router();
 // using '/' points this GET route to the root route of the server
 // this is the route used to create a homepage for a server
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 router.get('/animals', (req, res) => {
